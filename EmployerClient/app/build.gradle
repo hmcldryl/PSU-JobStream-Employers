@@ -31,6 +31,7 @@ android {
     packagingOptions {
         resources.excludes.add("META-INF/*")
     }
+    namespace 'com.jobstream.employer'
 }
 
 dependencies {
