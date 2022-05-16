@@ -1,0 +1,146 @@
+{
+  "project_info": {
+    "project_number": "578106785691",
+    "firebase_url": "https://psu-jobstream-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "psu-jobstream-app",
+    "storage_bucket": "psu-jobstream-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578106785691:android:f9d802fa912f51a805eb3e",
+        "android_client_info": {
+          "package_name": "com.jobstream.PSUJobStream"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578106785691-dh1neaabhqdvfjmtrlagsuov7ci23c7o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobstream.PSUJobStream",
+            "certificate_hash": "bef4819cddb657d1c78d40f256c737d8ce178095"
+          }
+        },
+        {
+          "client_id": "578106785691-s90q6661hi2trg9i34tea85i6ub99dp1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobstream.PSUJobStream",
+            "certificate_hash": "c0ccf53f038af0d9e82ad7e1de336a2dc03058ce"
+          }
+        },
+        {
+          "client_id": "578106785691-iajpm3c4e8vqdmqqg0c54g97ee2k5qjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSX_DrA8I72HGMxx-8z6CuW_wMkVM-5XA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578106785691-iajpm3c4e8vqdmqqg0c54g97ee2k5qjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578106785691:android:2f7d546a891e644e05eb3e",
+        "android_client_info": {
+          "package_name": "com.jobstream.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578106785691-9pjso7i3s69e4ubm5g0nk0mmqfq915ob.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobstream.admin",
+            "certificate_hash": "bef4819cddb657d1c78d40f256c737d8ce178095"
+          }
+        },
+        {
+          "client_id": "578106785691-jrj2onhpjendrjasdlvfc01vic9amgb4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobstream.admin",
+            "certificate_hash": "c0ccf53f038af0d9e82ad7e1de336a2dc03058ce"
+          }
+        },
+        {
+          "client_id": "578106785691-iajpm3c4e8vqdmqqg0c54g97ee2k5qjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSX_DrA8I72HGMxx-8z6CuW_wMkVM-5XA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578106785691-iajpm3c4e8vqdmqqg0c54g97ee2k5qjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578106785691:android:4189ddb7205f632305eb3e",
+        "android_client_info": {
+          "package_name": "com.jobstream.employer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578106785691-d1p9af9gmd9861gn4m4kujaa71ve7g0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobstream.employer",
+            "certificate_hash": "bef4819cddb657d1c78d40f256c737d8ce178095"
+          }
+        },
+        {
+          "client_id": "578106785691-ia6dip2v2bb17f0tf8ec5j99dgbbga2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobstream.employer",
+            "certificate_hash": "c0ccf53f038af0d9e82ad7e1de336a2dc03058ce"
+          }
+        },
+        {
+          "client_id": "578106785691-iajpm3c4e8vqdmqqg0c54g97ee2k5qjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSX_DrA8I72HGMxx-8z6CuW_wMkVM-5XA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578106785691-iajpm3c4e8vqdmqqg0c54g97ee2k5qjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

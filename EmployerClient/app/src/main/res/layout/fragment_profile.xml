@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/graphic_bg_profile"
+            android:elevation="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/bannerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bannerView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/placeholder_image_user_banner"
+                        app:layout_constraintDimensionRatio="H,3:1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/bannerContainerSpace"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/bannerContainer"
+                    android:orientation="horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignBottom="@id/bannerContainerSpace"
+                    android:layout_alignParentStart="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/photoView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/placeholder_photo"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="4dp"
+                        app:civ_circle_background_color="@color/colorPrimary" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnEditProfile"
+                        style="@style/Widget.MaterialComponents.FloatingActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        app:backgroundTint="@color/colorPrimary"
+                        app:elevation="0dp"
+                        app:fabSize="mini"
+                        app:srcCompat="@drawable/ic_button_edit_profile"
+                        app:tint="@color/tintIconLight" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/profileDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@color/colorAccent" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/profileWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:drawablePadding="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_icon_small_website"
+                app:drawableTint="@color/tintIcon" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/profileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:drawablePadding="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_icon_small_email"
+                app:drawableTint="@color/tintIcon" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

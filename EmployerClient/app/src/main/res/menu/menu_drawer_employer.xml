@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/btnAnnouncements"
+            android:icon="@drawable/ic_icon_announcement"
+            android:title="@string/button_text_announcement" />
+
+        <item
+            android:id="@+id/btnJobPostings"
+            android:icon="@drawable/ic_icon_post"
+            android:title="@string/button_text_job_posting" />
+
+        <item
+            android:id="@+id/btnAbout"
+            android:icon="@drawable/ic_button_about"
+            android:title="@string/button_text_about" />
+
+        <item
+            android:id="@+id/btnSettings"
+            android:icon="@drawable/ic_button_setting"
+            android:title="@string/button_text_settings" />
+
+        <item
+            android:id="@+id/btnSignOut"
+            android:icon="@drawable/ic_button_signout"
+            android:title="@string/button_text_signout" />
+    </group>
+
+</menu>

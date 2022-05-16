@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#E06013</color>
+    <color name="colorPrimaryDark">#B84B09</color>
+    <color name="colorAccent">#333333</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="tintIcon">#E06013</color>
+    <color name="tintIconLight">#FFFFFF</color>
+
+    <color name="textColor">#121212</color>
+    <color name="textColorLight">#FFFFFF</color>
+    <color name="textColorButton">#E06013</color>
+
+    <color name="imagePlaceholderColor">#F88C43</color>
+
+    <color name="postFeedBackgroundColor">#F88C43</color>
+
+    <color name="chatSenderCloudColor">#F88C43</color>
+    <color name="chatReceiverCloudColor">#FFFFFF</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#E06013</color>
+</resources>

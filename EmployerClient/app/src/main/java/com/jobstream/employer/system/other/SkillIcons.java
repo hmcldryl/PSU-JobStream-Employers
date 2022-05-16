@@ -1,0 +1,231 @@
+package com.jobstream.employer.system.other;
+
+import com.jobstream.employer.R;
+
+public class SkillIcons {
+    final int[] icons = {R.drawable.ic_icon_skill,  //ICON_000
+            R.drawable.ic_icon_skill_communication, //ICON_001
+            R.drawable.ic_icon_skill_teaching, //ICON_002
+            R.drawable.ic_icon_skill_teamwork, //ICON_003
+            R.drawable.ic_icon_skill_presenting, //ICON_004
+            R.drawable.ic_icon_skill_time_management, //ICON_005
+            R.drawable.ic_icon_skill_creative, //ICON_006
+            R.drawable.ic_icon_skill_idea, //ICON_007
+            R.drawable.ic_icon_skill_innovate, //ICON_008
+            R.drawable.ic_icon_skill_idea_sharing, //ICON_009
+            R.drawable.ic_icon_skill_confident, //ICON_010
+            R.drawable.ic_icon_skill_goal_oriented, //ICON_011
+            R.drawable.ic_icon_skill_schedule, //ICON_012
+            R.drawable.ic_icon_skill_todo, //ICON_013
+            R.drawable.ic_icon_skill_rest, //ICON_014
+            R.drawable.ic_icon_skill_collaborate, //ICON_015
+            R.drawable.ic_icon_skill_question, //ICON_016
+            R.drawable.ic_icon_skill_programming, //ICON_017
+            R.drawable.ic_icon_skill_driving, //ICON_018
+            R.drawable.ic_icon_skill_tools, //ICON_019
+            R.drawable.ic_icon_skill_plumbing, //ICON_020
+            R.drawable.ic_icon_skill_car_service, //ICON_021
+            R.drawable.ic_icon_skill_laptop_service, //ICON_022
+            R.drawable.ic_icon_skill_biotech, //ICON_023
+            R.drawable.ic_icon_skill_stethoscope, //ICON_024
+            R.drawable.ic_icon_skill_quick, //ICON_025
+            R.drawable.ic_icon_skill_planning, //ICON_026
+            R.drawable.ic_icon_skill_money_oriented, //ICON_027
+            R.drawable.ic_icon_skill_org_chart, //ICON_028
+            R.drawable.ic_icon_skill_creativity, //ICON_029
+            R.drawable.ic_icon_skill_exhibitor, //ICON_030
+            R.drawable.ic_icon_skill_technical_support, //ICON_031
+            R.drawable.ic_icon_skill_math, //ICON_032
+            R.drawable.ic_icon_skill_negotiate, //ICON_033
+            R.drawable.ic_icon_skill_positive_attitude, //ICON_034
+            R.drawable.ic_icon_skill_language, //ICON_035
+            R.drawable.ic_icon_skill_secure_person, //ICON_036
+            R.drawable.ic_icon_skill_adobe_photoshop, //ICON_037
+            R.drawable.ic_icon_skill_adobe_premiere, //ICON_038
+            R.drawable.ic_icon_skill_adobe_xd, //ICON_039
+            R.drawable.ic_icon_skill_ms_word, //ICON_040
+            R.drawable.ic_icon_skill_ms_excel  //ICON_041
+    };
+
+    public int[] getIcons() {
+        return icons;
+    }
+
+    public String getIconNumber(int position) {
+        switch (position) {
+            case 1:
+                return "001";
+            case 2:
+                return "002";
+            case 3:
+                return "003";
+            case 4:
+                return "004";
+            case 5:
+                return "005";
+            case 6:
+                return "006";
+            case 7:
+                return "007";
+            case 8:
+                return "008";
+            case 9:
+                return "009";
+            case 10:
+                return "010";
+            case 11:
+                return "011";
+            case 12:
+                return "012";
+            case 13:
+                return "013";
+            case 14:
+                return "014";
+            case 15:
+                return "015";
+            case 16:
+                return "016";
+            case 17:
+                return "017";
+            case 18:
+                return "018";
+            case 19:
+                return "019";
+            case 20:
+                return "020";
+            case 21:
+                return "021";
+            case 22:
+                return "022";
+            case 23:
+                return "023";
+            case 24:
+                return "024";
+            case 25:
+                return "025";
+            case 26:
+                return "026";
+            case 27:
+                return "027";
+            case 28:
+                return "028";
+            case 29:
+                return "029";
+            case 30:
+                return "030";
+            case 31:
+                return "031";
+            case 32:
+                return "032";
+            case 33:
+                return "033";
+            case 34:
+                return "034";
+            case 35:
+                return "035";
+            case 36:
+                return "036";
+            case 37:
+                return "037";
+            case 38:
+                return "038";
+            case 39:
+                return "039";
+            case 40:
+                return "040";
+            case 41:
+                return "041";
+            default:
+                return "000";
+        }
+    }
+
+    public int getIcon(String code) {
+        switch (code) {
+            case "001":
+                return icons[1];
+            case "002":
+                return icons[2];
+            case "003":
+                return icons[3];
+            case "004":
+                return icons[4];
+            case "005":
+                return icons[5];
+            case "006":
+                return icons[6];
+            case "007":
+                return icons[7];
+            case "008":
+                return icons[8];
+            case "009":
+                return icons[9];
+            case "010":
+                return icons[10];
+            case "011":
+                return icons[11];
+            case "012":
+                return icons[12];
+            case "013":
+                return icons[13];
+            case "014":
+                return icons[14];
+            case "015":
+                return icons[15];
+            case "016":
+                return icons[16];
+            case "017":
+                return icons[17];
+            case "018":
+                return icons[18];
+            case "019":
+                return icons[19];
+            case "020":
+                return icons[20];
+            case "021":
+                return icons[21];
+            case "022":
+                return icons[22];
+            case "023":
+                return icons[23];
+            case "024":
+                return icons[24];
+            case "025":
+                return icons[25];
+            case "026":
+                return icons[26];
+            case "027":
+                return icons[27];
+            case "028":
+                return icons[28];
+            case "029":
+                return icons[29];
+            case "030":
+                return icons[30];
+            case "031":
+                return icons[32];
+            case "032":
+                return icons[32];
+            case "033":
+                return icons[33];
+            case "034":
+                return icons[34];
+            case "035":
+                return icons[35];
+            case "036":
+                return icons[36];
+            case "037":
+                return icons[37];
+            case "038":
+                return icons[38];
+            case "039":
+                return icons[39];
+            case "040":
+                return icons[40];
+            case "041":
+                return icons[41];
+            default:
+                return icons[0];
+        }
+    }
+}

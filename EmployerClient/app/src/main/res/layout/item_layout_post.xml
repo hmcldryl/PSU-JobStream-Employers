@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/indent"
+                android:layout_width="16dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/body"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/graphic_gb_card_left_indent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/indent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/postImage"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/placeholder_image_post"
+                        app:layout_constraintDimensionRatio="H,4:3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/postTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text=""
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/postEmployerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_icon_small_employer"
+                    app:drawableTint="@color/tintIcon" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/postLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_icon_small_location"
+                    app:drawableTint="@color/tintIcon" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/postType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_icon_small_type"
+                    app:drawableTint="@color/tintIcon" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/postSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_icon_small_salary"
+                    app:drawableTint="@color/tintIcon" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/postTimestamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="#80121212"
+                    android:textSize="12sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

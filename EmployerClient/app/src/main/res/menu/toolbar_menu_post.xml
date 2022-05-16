@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item
+            android:id="@+id/btnStatus"
+            android:icon="@drawable/ic_button_post_done"
+            android:title="@string/button_text_status"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/btnDelete"
+            android:icon="@drawable/ic_button_delete"
+            android:title="@string/button_text_delete"
+            app:showAsAction="always" />
+    </group>
+
+</menu>

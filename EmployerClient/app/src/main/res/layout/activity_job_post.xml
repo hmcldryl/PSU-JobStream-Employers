@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobPostActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/background_toolbar"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:menu="@menu/toolbar_menu_post"
+            app:navigationIcon="@drawable/ic_button_back"
+            app:subtitleTextAppearance="@style/ToolbarSubtitleTextAppearance"
+            app:subtitleTextColor="@color/textColorLight"
+            app:title="@string/toolbar_title_text_job_post"
+            app:titleTextAppearance="@style/ToolbarTitleTextAppearance"
+            app:titleTextColor="@color/textColorLight" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/imageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/postImage"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/placeholder_image_post"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:layout_constraintDimensionRatio="H,4:3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/postDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:textAppearance="@style/HtmlTextViewTextAppearance"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/postEmployerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/postLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:drawableStart="@drawable/ic_icon_small_location"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                app:drawableTint="@color/tintIcon" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/postType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:drawableStart="@drawable/ic_icon_small_type"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                app:drawableTint="@color/tintIcon" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/postSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:drawableStart="@drawable/ic_icon_small_salary"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                app:drawableTint="@color/tintIcon" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/keywordChipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:chipSpacingHorizontal="6dp"
+                app:chipSpacingVertical="-8dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="64dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btnViewApplication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="@string/button_text_view_application"
+        android:textColor="@color/textColorLight"
+        app:backgroundTint="@color/colorPrimary"
+        app:icon="@drawable/ic_button_apply"
+        app:iconTint="@color/tintIconLight" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
