@@ -15,6 +15,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
+import com.github.javiersantos.appupdater.AppUpdater;
+import com.github.javiersantos.appupdater.enums.Display;
+import com.github.javiersantos.appupdater.enums.UpdateFrom;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
@@ -80,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        updateApp();
 
         mainViewPagerAdapter = new MainViewPagerAdapter(this);
         viewPager.setAdapter(mainViewPagerAdapter);
@@ -157,6 +162,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }).attach();
+    }
+
+    private void updateApp() {
+        AppUpdater appUpdater = new AppUpdater(this)
+                .setTitleOnUpdateAvailable("Update Available")
+                .setContentOnUpdateAvailable("Download the latest version of PSU JobStream for Employers.")
+                .setDisplay(Display.DIALOG)
+                .setUpdateFrom(UpdateFrom.GITHUB)
+                .setGitHubUserAndRepo("hmcldryl", "PSU-JobStream-Employers");
+        appUpdater.start();
     }
 
     @Override
