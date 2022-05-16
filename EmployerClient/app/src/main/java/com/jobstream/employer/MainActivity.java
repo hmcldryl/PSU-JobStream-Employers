@@ -168,6 +168,8 @@ public class MainActivity extends AppCompatActivity {
         AppUpdater appUpdater = new AppUpdater(this)
                 .setTitleOnUpdateAvailable("Update Available")
                 .setContentOnUpdateAvailable("Download the latest version of PSU JobStream for Employers.")
+                .setContentOnUpdateNotAvailable("No Updates Available")
+                .setTitleOnUpdateNotAvailable("You have the latest version of PSU JobStream for Employers.")
                 .setDisplay(Display.DIALOG)
                 .setUpdateFrom(UpdateFrom.GITHUB)
                 .setGitHubUserAndRepo("hmcldryl", "PSU-JobStream-Employers");
