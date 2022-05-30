@@ -11,6 +11,9 @@ public class Application {
     List<DocumentReference> document;
     Timestamp timestamp;
 
+    public Application() {
+    }
+
     public Application(DocumentReference user, DocumentReference post, String intro, List<DocumentReference> document, Timestamp timestamp) {
         this.user = user;
         this.post = post;

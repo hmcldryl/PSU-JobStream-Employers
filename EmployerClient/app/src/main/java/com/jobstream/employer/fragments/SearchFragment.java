@@ -1,5 +1,6 @@
 package com.jobstream.employer.fragments;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
@@ -221,6 +222,7 @@ public class SearchFragment extends Fragment {
 
         if (photoUrl != null) {
             if (!photoUrl.isEmpty()) {
+                if (!((Activity) context).isFinishing())
                 Glide.with(context)
                         .load(photoUrl)
                         .into(userPhoto);
@@ -246,7 +248,7 @@ public class SearchFragment extends Fragment {
         userName.setText(firstName + " " + lastName);
         userName.setSelected(true);
         userEmail.setText(email);
-        userStatus.setText(capitalize(status));
+        userStatus.setText(status);
         userStatus.setSelected(true);
         userProgram.setText(program);
         userProgram.setSelected(true);
@@ -271,15 +273,6 @@ public class SearchFragment extends Fragment {
         chip.setText(keyword);
         chip.setChipIcon(getResources().getDrawable(R.drawable.ic_icon_keyword));
         keywordChipGroup.addView(chip);
-    }
-
-    private String capitalize(String text) {
-        if (text != null) {
-            if (!text.isEmpty()) {
-                return text.substring(0, 1).toUpperCase() + text.substring(1);
-            }
-        }
-        return text;
     }
 
     private List<String> splitSearchQueryString(String s) {

@@ -82,7 +82,7 @@ public class NewJobPostActivity extends AppCompatActivity {
     ImageView inputImage;
     FloatingActionButton btnUploadPost;
 
-    List<String> keywordList;
+    List<String> keywordList = new ArrayList<>();
     Uri imageUri;
 
     StuffFormatter formatter;
@@ -429,11 +429,16 @@ public class NewJobPostActivity extends AppCompatActivity {
                 }
             }
 
+            if (Double.parseDouble(inputSalary.getText().toString()) > 0) {
+                postSalary.setText(formatter.formatSalary(Double.parseDouble(inputSalary.getText().toString())));
+            } else {
+                postSalary.setVisibility(View.GONE);
+            }
+
             postTitle.setText(inputTitle.getText().toString());
             renderRichText(postDescription, richEditor.getHtml());
             postLocation.setText(inputLocation.getText().toString());
             postType.setText(inputType.getText().toString());
-            postSalary.setText(formatter.formatSalary(Double.parseDouble(inputSalary.getText().toString())));
 
             btnOk.setOnClickListener(new View.OnClickListener() {
                 @Override

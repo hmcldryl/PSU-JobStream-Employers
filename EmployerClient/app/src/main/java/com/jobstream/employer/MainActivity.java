@@ -22,6 +22,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.google.android.material.textview.MaterialTextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPager2 viewPager;
 
     CircleImageView drawerPhoto;
-    TextView drawerName,
+    MaterialTextView drawerName,
             drawerEmail;
 
     MainViewPagerAdapter mainViewPagerAdapter;
