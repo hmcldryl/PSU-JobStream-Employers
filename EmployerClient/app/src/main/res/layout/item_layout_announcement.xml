@@ -14,7 +14,7 @@
         android:clickable="true"
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardBackgroundColor="@color/color_primary"
         app:cardCornerRadius="16dp"
         app:cardElevation="8dp">
 
@@ -76,7 +76,7 @@
                             android:marqueeRepeatLimit="marquee_forever"
                             android:scrollHorizontally="true"
                             android:singleLine="true"
-                            android:textColor="@color/textColor"
+                            android:textColor="@color/text_color"
                             android:textSize="14sp" />
 
                         <com.google.android.material.textview.MaterialTextView
@@ -130,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
                         android:fontFamily="@font/montserrat_bold"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textSize="14sp" />
 
                     <com.google.android.material.textview.MaterialTextView
@@ -139,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
                         android:fontFamily="@font/montserrat"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textSize="12sp" />
 
                     <Space

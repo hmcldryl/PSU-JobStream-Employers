@@ -35,7 +35,7 @@
                         android:id="@+id/bannerView"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:background="@color/imagePlaceholderColor"
+                        android:background="@color/image_placeholder_color"
                         app:layout_constraintDimensionRatio="H,3:1"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -64,9 +64,9 @@
                                 android:layout_height="100dp"
                                 android:layout_centerHorizontal="true"
                                 android:src="@drawable/placeholder_photo"
-                                app:civ_border_color="@color/colorPrimary"
+                                app:civ_border_color="@color/color_primary"
                                 app:civ_border_width="4dp"
-                                app:civ_circle_background_color="@color/colorPrimary" />
+                                app:civ_circle_background_color="@color/color_primary" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -91,7 +91,7 @@
                     android:singleLine="true"
                     android:text=""
                     android:textAlignment="center"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/text_color"
                     android:textSize="16sp" />
 
                 <com.google.android.material.textview.MaterialTextView
@@ -102,7 +102,7 @@
                     android:fontFamily="@font/montserrat"
                     android:text=""
                     android:textAlignment="center"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/text_color"
                     android:textSize="12sp" />
 
                 <Space
@@ -119,10 +119,10 @@
                 app:layout_collapseMode="pin"
                 app:navigationIcon="@drawable/ic_button_back"
                 app:subtitleTextAppearance="@style/ToolbarSubtitleTextAppearance"
-                app:subtitleTextColor="@color/textColorLight"
+                app:subtitleTextColor="@color/text_color_light"
                 app:title="@string/toolbar_title_text_user_profile"
                 app:titleTextAppearance="@style/ToolbarTitleTextAppearance"
-                app:titleTextColor="@color/textColorLight" />
+                app:titleTextColor="@color/text_color_light" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -130,7 +130,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/postFeedBackgroundColor"
+        android:background="@color/post_feed_background_color"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
@@ -168,7 +168,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_icon_skill"
-                            app:tint="@color/tintIcon" />
+                            app:tint="@color/tint_icon" />
 
                         <Space
                             android:layout_width="8dp"
@@ -182,7 +182,7 @@
                             android:gravity="center_vertical"
                             android:includeFontPadding="false"
                             android:text="@string/label_text_vitae_skill"
-                            android:textColor="@color/textColor"
+                            android:textColor="@color/text_color"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -194,7 +194,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="16dp"
                         android:padding="8dp"
-                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardBackgroundColor="@color/color_primary"
                         app:cardCornerRadius="8dp"
                         app:cardElevation="0dp">
 
@@ -211,7 +211,7 @@
                                 android:fontFamily="@font/montserrat"
                                 android:text="@string/prompt_skill"
                                 android:textAlignment="center"
-                                android:textColor="@color/textColorLight"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="12sp" />
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
@@ -258,7 +258,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_icon_experience"
-                            app:tint="@color/tintIcon" />
+                            app:tint="@color/tint_icon" />
 
                         <Space
                             android:layout_width="8dp"
@@ -272,7 +272,7 @@
                             android:gravity="center_vertical"
                             android:includeFontPadding="false"
                             android:text="@string/label_text_vitae_experience"
-                            android:textColor="@color/textColor"
+                            android:textColor="@color/text_color"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -286,7 +286,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
                         android:padding="8dp"
-                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardBackgroundColor="@color/color_primary"
                         app:cardCornerRadius="8dp"
                         app:cardElevation="0dp">
 
@@ -303,7 +303,7 @@
                                 android:fontFamily="@font/montserrat"
                                 android:text="@string/prompt_experience"
                                 android:textAlignment="center"
-                                android:textColor="@color/textColorLight"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="12sp" />
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
@@ -352,6 +352,6 @@
         android:layout_margin="16dp"
         app:backgroundTint="@color/white"
         app:srcCompat="@drawable/ic_button_send_message"
-        app:tint="@color/tintIcon" />
+        app:tint="@color/tint_icon" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

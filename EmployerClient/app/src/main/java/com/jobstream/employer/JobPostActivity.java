@@ -180,7 +180,7 @@ public class JobPostActivity extends AppCompatActivity {
                                         loadApplication(task.getResult().getDocuments().get(i).getReference(),
                                                 task.getResult().getDocuments().get(i).getDocumentReference("post"),
                                                 task.getResult().getDocuments().get(i).getString("intro"),
-                                                (List<String>) task.getResult().getDocuments().get(i).get("documentId"),
+                                                (List<DocumentReference>) task.getResult().getDocuments().get(i).get("document"),
                                                 task.getResult().getDocuments().get(i).getTimestamp("timestamp"),
                                                 applicationGroup);
                                     }
@@ -394,7 +394,7 @@ public class JobPostActivity extends AppCompatActivity {
         if (salary > 0) {
             postSalary.setText(formatter.formatSalary(salary));
         } else {
-            postSalary.setVisibility(View.GONE);
+            postSalary.setText("N/A");
         }
 
         postTitle.setText(title);
@@ -404,7 +404,7 @@ public class JobPostActivity extends AppCompatActivity {
         toolbar.setSubtitle("Posted " + timestamp);
     }
 
-    private void loadApplication(DocumentReference application, DocumentReference post, String intro, List<String> documentId, Timestamp timestamp, ViewGroup applicationGroup) {
+    private void loadApplication(DocumentReference application, DocumentReference post, String intro, List<DocumentReference> documentList, Timestamp timestamp, ViewGroup applicationGroup) {
         View view = LayoutInflater.from(this).inflate(R.layout.item_layout_job_application, applicationGroup, false);
         MaterialCardView item = view.findViewById(R.id.item);
         CircleImageView businessPhoto = view.findViewById(R.id.businessPhoto);
@@ -416,14 +416,14 @@ public class JobPostActivity extends AppCompatActivity {
         MaterialTextView postType = view.findViewById(R.id.postType);
         MaterialTextView postTimestamp = view.findViewById(R.id.postTimestamp);
 
-        application.get()
+        post.get()
                 .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                         if (task.isSuccessful()) {
                             String title = task.getResult().getString("title");
                             String location = task.getResult().getString("location");
-                            Double salary = Double.parseDouble(task.getResult().getString("salary"));
+                            Double salary = task.getResult().getLong("salary").doubleValue();
                             String type = task.getResult().getString("type");
                             DocumentReference employer = task.getResult().getDocumentReference("employer");
                             String photoUrl = task.getResult().getString("photoUrl");
@@ -446,10 +446,15 @@ public class JobPostActivity extends AppCompatActivity {
                                         }
                                     });
 
+                            if (salary > 0) {
+                                postSalary.setText(formatter.formatSalary(salary));
+                            } else {
+                                postSalary.setText("N/A");
+                            }
+
                             postTitle.setText(title);
                             applicationIntro.setText(getString(R.string.text_quotation) + intro + getString(R.string.text_quotation));
                             postJobLocation.setText(location);
-                            postSalary.setText(formatter.formatSalary(salary));
                             postType.setText(type);
                             postTimestamp.setText("applied " + formatter.formatTimestamp(timestamp));
 
@@ -475,18 +480,14 @@ public class JobPostActivity extends AppCompatActivity {
 
                                         applicationIntro.setText(intro);
 
-                                        for (int i = 0; i < documentId.size(); i++) {
+                                        for (int i = 0; i < documentList.size(); i++) {
                                             View documentView = LayoutInflater.from(JobPostActivity.this).inflate(R.layout.item_layout_application_document, applicationGroup, false);
                                             LinearLayout item = documentView.findViewById(R.id.item);
                                             ImageView documentThumbnail = documentView.findViewById(R.id.documentThumbnail);
                                             MaterialTextView documentName = documentView.findViewById(R.id.documentName);
                                             MaterialTextView documentType = documentView.findViewById(R.id.documentType);
 
-                                            db.collection("users")
-                                                    .document(auth.getCurrentUser().getUid())
-                                                    .collection("documents")
-                                                    .document(documentId.get(i))
-                                                    .get()
+                                            documentList.get(i).get()
                                                     .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                                                         @Override
                                                         public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -559,8 +560,8 @@ public class JobPostActivity extends AppCompatActivity {
     private void addKeywordChip(String keyword) {
         final Chip chip = new Chip(this);
         chip.setTextAppearance(R.style.ChipTextAppearance);
-        chip.setChipBackgroundColor(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimary)));
-        chip.setTextColor(getResources().getColor(R.color.textColorLight));
+        chip.setChipBackgroundColor(ColorStateList.valueOf(getResources().getColor(R.color.color_primary)));
+        chip.setTextColor(getResources().getColor(R.color.text_color_light));
         chip.setText(keyword);
         chip.setChipIcon(getResources().getDrawable(R.drawable.ic_icon_keyword));
         keywordChipGroup.addView(chip);

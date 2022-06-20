@@ -183,7 +183,7 @@ public class NewJobPostActivity extends AppCompatActivity {
     private void setupRichTextEditor() {
         richEditor.setEditorHeight(250);
         richEditor.setEditorFontSize(14);
-        richEditor.setEditorFontColor(getResources().getColor(R.color.textColor));
+        richEditor.setEditorFontColor(getResources().getColor(R.color.text_color));
         richEditor.setPadding(8, 8, 8, 8);
         richEditor.setPlaceholder(getString(R.string.input_hint_description));
 
@@ -566,8 +566,8 @@ public class NewJobPostActivity extends AppCompatActivity {
     private void addKeywordChip(String keyword) {
         final Chip chip = new Chip(this);
         chip.setTextAppearance(R.style.ChipTextAppearance);
-        chip.setChipBackgroundColor(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimary)));
-        chip.setTextColor(getResources().getColor(R.color.textColorLight));
+        chip.setChipBackgroundColor(ColorStateList.valueOf(getResources().getColor(R.color.color_primary)));
+        chip.setTextColor(getResources().getColor(R.color.text_color_light));
         chip.setCloseIconVisible(true);
         chip.setCloseIconTintResource(R.color.white);
         chip.setText(keyword);
@@ -586,8 +586,8 @@ public class NewJobPostActivity extends AppCompatActivity {
     private void addKeywordChip(String keyword, ChipGroup keywordChipGroup) {
         final Chip chip = new Chip(this);
         chip.setTextAppearance(R.style.ChipTextAppearance);
-        chip.setChipBackgroundColor(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimary)));
-        chip.setTextColor(getResources().getColor(R.color.textColorLight));
+        chip.setChipBackgroundColor(ColorStateList.valueOf(getResources().getColor(R.color.color_primary)));
+        chip.setTextColor(getResources().getColor(R.color.text_color_light));
         chip.setText(keyword);
         chip.setChipIcon(getResources().getDrawable(R.drawable.ic_icon_keyword));
         keywordChipGroup.addView(chip);

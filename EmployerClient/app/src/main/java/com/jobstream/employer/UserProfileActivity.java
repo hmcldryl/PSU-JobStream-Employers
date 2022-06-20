@@ -332,7 +332,7 @@ public class UserProfileActivity extends AppCompatActivity {
         final Chip chip = new Chip(this);
         chip.setTextAppearance(R.style.ChipTextAppearance);
         chip.setChipBackgroundColor(ColorStateList.valueOf(getResources().getColor(R.color.white)));
-        chip.setTextColor(getResources().getColor(R.color.textColorButton));
+        chip.setTextColor(getResources().getColor(R.color.text_color_button));
         chip.setText(keyword);
         chip.setChipIcon(getResources().getDrawable(R.drawable.ic_icon_keyword_tinted));
         keywordChipGroup.addView(chip);

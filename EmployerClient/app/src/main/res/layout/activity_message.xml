@@ -18,9 +18,9 @@
             android:background="@drawable/background_toolbar"
             app:navigationIcon="@drawable/ic_button_back"
             app:subtitleTextAppearance="@style/ToolbarSubtitleTextAppearance"
-            app:subtitleTextColor="@color/textColorLight"
+            app:subtitleTextColor="@color/text_color_light"
             app:titleTextAppearance="@style/ToolbarTitleTextAppearance"
-            app:titleTextColor="@color/textColorLight" />
+            app:titleTextColor="@color/text_color_light" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -80,7 +80,7 @@
                     android:padding="2dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ic_button_upload"
-                    app:tint="@color/tintIconLight" />
+                    app:tint="@color/tint_icon_light" />
 
                 <Space
                     android:layout_width="8dp"
@@ -95,7 +95,7 @@
                     android:padding="2dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ic_button_upload_image"
-                    app:tint="@color/tintIconLight" />
+                    app:tint="@color/tint_icon_light" />
 
             </LinearLayout>
 
@@ -141,7 +141,7 @@
                 android:padding="0dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_button_send_message"
-                app:tint="@color/tintIconLight" />
+                app:tint="@color/tint_icon_light" />
         </RelativeLayout>
 
     </RelativeLayout>

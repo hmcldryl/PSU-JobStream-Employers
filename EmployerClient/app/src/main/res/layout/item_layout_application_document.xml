@@ -21,7 +21,7 @@
             android:layout_height="75dp"
             android:layout_gravity="center"
             android:padding="16dp"
-            app:tint="@color/tintIcon" />
+            app:tint="@color/tint_icon" />
 
         <Space
             android:layout_width="8dp"
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
                 android:text=""
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="14sp" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
                 android:text=""
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="12sp" />
         </LinearLayout>
 

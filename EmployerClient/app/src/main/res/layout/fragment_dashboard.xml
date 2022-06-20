@@ -40,14 +40,14 @@
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/colorAccent"
+                            android:background="@color/color_on_primary"
                             android:fontFamily="@font/montserrat"
                             android:gravity="center"
                             android:includeFontPadding="false"
                             android:padding="8dp"
                             android:text="@string/label_text_title_welcome"
                             android:textAlignment="center"
-                            android:textColor="@color/textColorLight"
+                            android:textColor="@color/text_color_light"
                             android:textSize="16sp" />
 
                         <Space
@@ -73,7 +73,7 @@
                                 android:includeFontPadding="false"
                                 android:text="@string/label_text_title_employers"
                                 android:textAlignment="center"
-                                android:textColor="@color/colorAccent"
+                                android:textColor="@color/color_on_primary"
                                 android:textSize="30sp" />
 
                         </LinearLayout>
@@ -108,16 +108,16 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorAccent"
+                        android:background="@color/color_on_primary"
                         android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="50dp"
-                            android:background="@color/colorPrimary"
+                            android:background="@color/color_primary"
                             android:padding="8dp"
                             android:src="@drawable/ic_icon_post"
-                            app:tint="@color/tintIconLight" />
+                            app:tint="@color/tint_icon_light" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -133,7 +133,7 @@
                                 android:includeFontPadding="false"
                                 android:paddingHorizontal="16dp"
                                 android:text="@string/label_text_dashboard_posts"
-                                android:textColor="@color/textColorLight"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="14sp" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -144,7 +144,7 @@
                                 android:includeFontPadding="false"
                                 android:paddingHorizontal="16dp"
                                 android:text="@string/label_subtext_dashboard_posts"
-                                android:textColor="@color/textColorLight"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -176,7 +176,7 @@
                                 android:paddingHorizontal="16dp"
                                 android:text="Total Post"
                                 android:textAlignment="center"
-                                android:textColor="@color/textColor"
+                                android:textColor="@color/text_color"
                                 android:textSize="14sp" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -188,7 +188,7 @@
                                 android:paddingHorizontal="16dp"
                                 android:text="--"
                                 android:textAlignment="center"
-                                android:textColor="@color/textColor"
+                                android:textColor="@color/text_color"
                                 android:textSize="12sp" />
 
                             <Space
@@ -215,7 +215,7 @@
                                 android:paddingHorizontal="16dp"
                                 android:text="Active"
                                 android:textAlignment="center"
-                                android:textColor="@color/textColor"
+                                android:textColor="@color/text_color"
                                 android:textSize="14sp" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -227,7 +227,7 @@
                                 android:paddingHorizontal="16dp"
                                 android:text="--"
                                 android:textAlignment="center"
-                                android:textColor="@color/textColor"
+                                android:textColor="@color/text_color"
                                 android:textSize="12sp" />
 
                             <Space
@@ -254,7 +254,7 @@
                                 android:paddingHorizontal="16dp"
                                 android:text="Archived"
                                 android:textAlignment="center"
-                                android:textColor="@color/textColor"
+                                android:textColor="@color/text_color"
                                 android:textSize="14sp" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -266,7 +266,7 @@
                                 android:paddingHorizontal="16dp"
                                 android:text="--"
                                 android:textAlignment="center"
-                                android:textColor="@color/textColor"
+                                android:textColor="@color/text_color"
                                 android:textSize="12sp" />
 
                             <Space

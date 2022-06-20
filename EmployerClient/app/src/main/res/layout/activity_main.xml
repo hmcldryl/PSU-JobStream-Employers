@@ -24,9 +24,9 @@
                 android:background="@drawable/background_toolbar"
                 app:navigationIcon="@drawable/ic_button_hamburger"
                 app:subtitleTextAppearance="@style/ToolbarSubtitleTextAppearance"
-                app:subtitleTextColor="@color/textColorLight"
+                app:subtitleTextColor="@color/text_color_light"
                 app:titleTextAppearance="@style/ToolbarTitleTextAppearance"
-                app:titleTextColor="@color/textColorLight" />
+                app:titleTextColor="@color/text_color_light" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -47,7 +47,7 @@
             android:elevation="8dp"
             app:tabBackground="@drawable/selector_tab_background"
             app:tabIconTint="@color/selector_tab_icon"
-            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorColor="@color/color_primary"
             app:tabIndicatorHeight="4dp"
             app:tabMode="fixed">
 
@@ -82,9 +82,9 @@
         android:layout_gravity="start"
         android:background="@drawable/background_drawer"
         android:fitsSystemWindows="true"
-        app:itemIconTint="@color/tintIcon"
+        app:itemIconTint="@color/tint_icon"
         app:itemTextAppearance="@style/ToolbarSubtitleTextAppearance"
-        app:itemTextColor="@color/textColor">
+        app:itemTextColor="@color/text_color">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -118,9 +118,9 @@
                             android:layout_width="75dp"
                             android:layout_height="75dp"
                             android:src="@drawable/placeholder_image_employer_photo"
-                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_border_color="@color/color_primary"
                             app:civ_border_width="4dp"
-                            app:civ_circle_background_color="@color/colorPrimary" />
+                            app:civ_circle_background_color="@color/color_primary" />
 
                         <Space
                             android:layout_width="6dp"
@@ -141,7 +141,7 @@
                                 android:fontFamily="@font/montserrat_bold"
                                 android:singleLine="true"
                                 android:text=""
-                                android:textColor="@color/textColor"
+                                android:textColor="@color/text_color"
                                 android:textSize="14sp" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -152,7 +152,7 @@
                                 android:fontFamily="@font/montserrat"
                                 android:singleLine="true"
                                 android:text=""
-                                android:textColor="@color/textColor"
+                                android:textColor="@color/text_color"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -165,7 +165,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/colorPrimary" />
+                        android:background="@color/color_primary" />
                 </LinearLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -215,7 +215,7 @@
                         android:layout_marginStart="16dp"
                         android:padding="12dp"
                         android:src="@drawable/ic_icon_announcement"
-                        app:tint="@color/tintIcon" />
+                        app:tint="@color/tint_icon" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -227,7 +227,7 @@
                         android:lines="1"
                         android:padding="8dp"
                         android:text="@string/button_text_announcement"
-                        android:textColor="@color/textColor" />
+                        android:textColor="@color/text_color" />
 
                 </LinearLayout>
 
@@ -246,7 +246,7 @@
                         android:layout_marginStart="16dp"
                         android:padding="12dp"
                         android:src="@drawable/ic_icon_post"
-                        app:tint="@color/tintIcon" />
+                        app:tint="@color/tint_icon" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -258,7 +258,7 @@
                         android:lines="1"
                         android:padding="8dp"
                         android:text="@string/button_text_job_posting"
-                        android:textColor="@color/textColor" />
+                        android:textColor="@color/text_color" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -286,7 +286,7 @@
                         android:layout_marginStart="16dp"
                         android:padding="12dp"
                         android:src="@drawable/ic_button_about"
-                        app:tint="@color/tintIcon" />
+                        app:tint="@color/tint_icon" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -298,7 +298,7 @@
                         android:lines="1"
                         android:padding="8dp"
                         android:text="@string/button_text_about"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -318,7 +318,7 @@
                         android:layout_marginStart="16dp"
                         android:padding="12dp"
                         android:src="@drawable/ic_button_setting"
-                        app:tint="@color/tintIcon" />
+                        app:tint="@color/tint_icon" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -330,7 +330,7 @@
                         android:lines="1"
                         android:padding="8dp"
                         android:text="@string/button_text_settings"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -350,7 +350,7 @@
                         android:layout_marginStart="16dp"
                         android:padding="12dp"
                         android:src="@drawable/ic_button_signout"
-                        app:tint="@color/tintIcon" />
+                        app:tint="@color/tint_icon" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -362,7 +362,7 @@
                         android:lines="1"
                         android:padding="8dp"
                         android:text="@string/button_text_signout"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textSize="14sp" />
 
                 </LinearLayout>

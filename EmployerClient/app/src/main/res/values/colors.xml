@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <color name="colorPrimary">#E06013</color>
-    <color name="colorPrimaryDark">#B84B09</color>
-    <color name="colorAccent">#333333</color>
+    <!-- Primary brand color. -->
+    <color name="color_primary">@color/orange_500</color>
+    <color name="color_primary_variant">@color/orange_700</color>
+    <color name="color_on_primary">@color/black</color>
+    <!-- Secondary brand color. -->
+
+    <!--  New UI Color Pallete  -->
+    <!-- Primary brand color. -->
+    <color name="orange_500">#FF5722</color>
+    <color name="orange_700">#E64A19</color>
+    <!-- Secondary brand color. -->
+    <color name="yellow_200">#FFF59D</color>
+    <color name="yellow_700">#FBC02D</color>
 
     <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <!--  New UI Color Pallete  -->
 
-    <color name="tintIcon">#E06013</color>
-    <color name="tintIconLight">#FFFFFF</color>
+    <color name="tint_icon">#E06013</color>
+    <color name="tint_icon_light">#FFFFFF</color>
 
-    <color name="textColor">#121212</color>
-    <color name="textColorLight">#FFFFFF</color>
-    <color name="textColorButton">#E06013</color>
+    <color name="text_color">#121212</color>
+    <color name="text_color_light">#FFFFFF</color>
+    <color name="text_color_button">#E06013</color>
 
-    <color name="imagePlaceholderColor">#F88C43</color>
+    <color name="image_placeholder_color">#F88C43</color>
 
-    <color name="postFeedBackgroundColor">#F88C43</color>
+    <color name="post_feed_background_color">#F88C43</color>
 
-    <color name="chatSenderCloudColor">#F88C43</color>
-    <color name="chatReceiverCloudColor">#FFFFFF</color>
+    <color name="chat_sender_cloud_color">#F88C43</color>
+    <color name="chat_receiver_cloud_color">#FFFFFF</color>
 
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#E06013</color>
 </resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/background_toolbar"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="@drawable/ic_button_back"
+            app:subtitle="@string/toolbar_subtitle_text_settings"
+            app:subtitleTextAppearance="@style/ToolbarSubtitleTextAppearance"
+            app:subtitleTextColor="@color/text_color_light"
+            app:title="@string/toolbar_title_text_settings"
+            app:titleTextAppearance="@style/ToolbarTitleTextAppearance"
+            app:titleTextColor="@color/text_color_light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/label_text_settings_account"
+                android:textColor="@color/text_color_button"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textBtnVerifyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:lines="1"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="@string/button_text_settings_send_verification"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textBtnChangeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:lines="1"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="@string/button_text_settings_change_email"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textBtnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:lines="1"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="@string/button_text_settings_change_password"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/label_text_settings_system"
+                android:textColor="@color/text_color_button"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textBtnCheckUpdates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:lines="1"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="@string/button_text_settings_check_update"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

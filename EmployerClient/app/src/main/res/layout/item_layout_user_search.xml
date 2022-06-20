@@ -53,9 +53,9 @@
                         android:layout_height="100dp"
                         android:layout_centerHorizontal="true"
                         android:src="@drawable/placeholder_photo"
-                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_color="@color/color_primary"
                         app:civ_border_width="4dp"
-                        app:civ_circle_background_color="@color/colorPrimary" />
+                        app:civ_circle_background_color="@color/color_primary" />
                 </RelativeLayout>
 
             </LinearLayout>
@@ -84,7 +84,7 @@
                 android:scrollHorizontally="true"
                 android:singleLine="true"
                 android:textAlignment="center"
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="14sp" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -98,7 +98,7 @@
                 android:includeFontPadding="false"
                 android:maxLines="1"
                 android:textAlignment="center"
-                android:textColor="@color/textColorButton"
+                android:textColor="@color/text_color_button"
                 android:textSize="12sp" />
 
             <Space
@@ -109,7 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginHorizontal="8dp"
-                android:background="@color/colorAccent" />
+                android:background="@color/color_on_primary" />
 
             <Space
                 android:layout_width="match_parent"
@@ -129,10 +129,10 @@
                 android:marqueeRepeatLimit="marquee_forever"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="12sp"
                 app:drawableStartCompat="@drawable/ic_icon_small_status"
-                app:drawableTint="@color/tintIcon" />
+                app:drawableTint="@color/tint_icon" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/userProgram"
@@ -148,10 +148,10 @@
                 android:marqueeRepeatLimit="marquee_forever"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="12sp"
                 app:drawableStartCompat="@drawable/ic_icon_small_program"
-                app:drawableTint="@color/tintIcon" />
+                app:drawableTint="@color/tint_icon" />
         </LinearLayout>
 
         <HorizontalScrollView

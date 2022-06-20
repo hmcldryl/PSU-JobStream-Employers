@@ -33,7 +33,7 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:src="@drawable/prompt_conversation"
-                app:tint="@color/tintIcon" />
+                app:tint="@color/tint_icon" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
@@ -41,7 +41,7 @@
                 android:fontFamily="@font/montserrat"
                 android:text="@string/prompt_conversation"
                 android:textAlignment="center"
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="14sp" />
         </LinearLayout>
 

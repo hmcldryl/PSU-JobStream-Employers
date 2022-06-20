@@ -192,6 +192,7 @@ public class MainActivity extends AppCompatActivity {
                                     if (value != null) {
                                         if (value.exists()) {
                                             if (value.getString("photoUrl") != null) {
+                                                if (!MainActivity.this.isFinishing())
                                                 Glide.with(MainActivity.this)
                                                         .load(value.getString("photoUrl"))
                                                         .into(drawerPhoto);

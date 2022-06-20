@@ -27,14 +27,14 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="50dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/color_primary"
                     android:padding="8dp"
                     android:src="@drawable/ic_icon_job_application" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="@color/colorAccent"
+                    android:background="@color/color_on_primary"
                     android:gravity="center_vertical"
                     android:orientation="vertical">
 
@@ -46,7 +46,7 @@
                         android:gravity="center_vertical"
                         android:includeFontPadding="false"
                         android:text="@string/dialog_title_view_application"
-                        android:textColor="@color/textColorLight"
+                        android:textColor="@color/text_color_light"
                         android:textSize="14sp" />
 
                     <com.google.android.material.textview.MaterialTextView
@@ -57,7 +57,7 @@
                         android:gravity="center_vertical"
                         android:includeFontPadding="false"
                         android:text="@string/dialog_subtitle_view_application"
-                        android:textColor="@color/textColorLight"
+                        android:textColor="@color/text_color_light"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -84,7 +84,7 @@
                         android:layout_marginHorizontal="16dp"
                         android:fontFamily="@font/montserrat"
                         android:text=""
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textSize="14sp" />
 
                     <Space
@@ -123,7 +123,7 @@
                             android:fontFamily="@font/montserrat"
                             android:text="@string/button_text_delete"
                             app:icon="@drawable/ic_button_delete"
-                            app:strokeColor="@color/colorPrimary" />
+                            app:strokeColor="@color/color_primary" />
 
                     </LinearLayout>
 

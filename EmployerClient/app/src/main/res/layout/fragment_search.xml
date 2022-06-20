@@ -30,11 +30,11 @@
                 app:boxCornerRadiusBottomStart="32dp"
                 app:boxCornerRadiusTopEnd="32dp"
                 app:boxCornerRadiusTopStart="32dp"
-                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeColor="@color/color_primary"
                 app:boxStrokeWidth="2dp"
                 app:endIconDrawable="@drawable/ic_button_search"
                 app:endIconMode="custom"
-                app:endIconTint="@color/colorPrimary"
+                app:endIconTint="@color/color_primary"
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -48,7 +48,7 @@
                     android:maxLines="1"
                     android:paddingStart="16dp"
                     android:paddingEnd="16dp"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/text_color"
                     android:textCursorDrawable="@null" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -79,7 +79,7 @@
                         android:paddingHorizontal="8dp"
                         android:paddingVertical="4dp"
                         android:src="@drawable/ic_icon_people"
-                        app:tint="@color/tintIcon" />
+                        app:tint="@color/tint_icon" />
 
                     <Space
                         android:layout_width="8dp"
@@ -99,7 +99,7 @@
                             android:fontFamily="@font/montserrat_bold"
                             android:gravity="center_vertical"
                             android:text="@string/label_text_search_section3"
-                            android:textColor="@color/textColor"
+                            android:textColor="@color/text_color"
                             android:textSize="14sp" />
 
                         <com.google.android.material.textview.MaterialTextView
@@ -109,7 +109,7 @@
                             android:layout_gravity="center_vertical"
                             android:fontFamily="@font/montserrat"
                             android:gravity="center_vertical"
-                            android:textColor="@color/textColor"
+                            android:textColor="@color/text_color"
                             android:textSize="12sp" />
 
                     </LinearLayout>
@@ -151,10 +151,10 @@
                 android:drawablePadding="8dp"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/tip_title_search"
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="24sp"
                 app:drawableStartCompat="@drawable/ic_button_search"
-                app:drawableTint="@color/tintIcon" />
+                app:drawableTint="@color/tint_icon" />
 
             <Space
                 android:layout_width="match_parent"
@@ -163,7 +163,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/colorPrimary" />
+                android:background="@color/color_primary" />
 
             <Space
                 android:layout_width="match_parent"
@@ -174,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
                 android:text="@string/tip_message_search"
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="14sp" />
 
             <Space
@@ -187,7 +187,7 @@
                 android:layout_marginHorizontal="8dp"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="Note:"
-                android:textColor="@color/textColorButton"
+                android:textColor="@color/text_color_button"
                 android:textSize="14sp" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -197,7 +197,7 @@
                 android:fontFamily="@font/montserrat"
                 android:includeFontPadding="false"
                 android:text="Maximum of ten (10) keywords."
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="14sp" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -207,7 +207,7 @@
                 android:fontFamily="@font/montserrat"
                 android:includeFontPadding="false"
                 android:text="Keywords are case-sensitive."
-                android:textColor="@color/textColor"
+                android:textColor="@color/text_color"
                 android:textSize="14sp" />
 
         </LinearLayout>

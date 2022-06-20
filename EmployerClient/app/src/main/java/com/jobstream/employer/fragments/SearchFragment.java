@@ -268,8 +268,8 @@ public class SearchFragment extends Fragment {
     private void addKeywordChip(String keyword, ChipGroup keywordChipGroup) {
         final Chip chip = new Chip(context);
         chip.setTextAppearance(R.style.ChipTextAppearance);
-        chip.setChipBackgroundColor(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimary)));
-        chip.setTextColor(getResources().getColor(R.color.textColorLight));
+        chip.setChipBackgroundColor(ColorStateList.valueOf(getResources().getColor(R.color.color_primary)));
+        chip.setTextColor(getResources().getColor(R.color.text_color_light));
         chip.setText(keyword);
         chip.setChipIcon(getResources().getDrawable(R.drawable.ic_icon_keyword));
         keywordChipGroup.addView(chip);

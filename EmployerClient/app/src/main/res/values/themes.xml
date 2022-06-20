@@ -1,9 +1,16 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_variant</item>
+        <item name="colorAccent">@color/color_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow_200</item>
+        <item name="colorSecondaryVariant">@color/yellow_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">false</item>
     </style>
@@ -16,15 +23,15 @@
     <style name="Theme.PdfView.SelectedTheme" parent="Theme.PdfView.Light">
         <item name="pdfView_backIcon">@drawable/ic_button_back</item>
         <item name="pdfView_downloadIcon">@drawable/ic_button_download_resume</item>
-        <item name="pdfView_downloadIconTint">@color/tintIconLight</item>
-        <item name="pdfView_actionBarTint">@color/colorPrimary</item>
+        <item name="pdfView_downloadIconTint">@color/tint_icon_light</item>
+        <item name="pdfView_actionBarTint">@color/color_primary</item>
         <item name="pdfView_titleTextStyle">@style/ActionBarTitleTextAppearance</item>
     </style>
 
     <style name="ActionBarTitleTextAppearance" parent="android:TextAppearance.Material.Widget.Toolbar.Title">
         <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/textColorLight</item>
+        <item name="android:textColor">@color/text_color_light</item>
     </style>
 
     <style name="ToolbarTitleTextAppearance" parent="android:TextAppearance.Material.Widget.Toolbar.Title">
@@ -42,7 +49,7 @@
     <style name="ChipTextAppearance" parent="android:TextAppearance.Material">
         <item name="android:fontFamily">@font/montserrat</item>
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/textColorLight</item>
+        <item name="android:textColor">@color/text_color_light</item>
         <item name="android:includeFontPadding">false</item>
     </style>
 
@@ -53,7 +60,7 @@
 
     <style name="HtmlTextViewTextAppearance">
         <item name="android:fontFamily">@font/montserrat</item>
-        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColor">@color/text_color</item>
     </style>
 
 </resources>

@@ -27,14 +27,14 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="50dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/color_primary"
                     android:padding="8dp"
                     android:src="@drawable/ic_button_insert_link" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="@color/colorAccent"
+                    android:background="@color/color_on_primary"
                     android:gravity="center_vertical"
                     android:orientation="vertical">
 
@@ -46,7 +46,7 @@
                         android:includeFontPadding="false"
                         android:paddingHorizontal="16dp"
                         android:text="@string/dialog_title_insert_link"
-                        android:textColor="@color/textColorLight"
+                        android:textColor="@color/text_color_light"
                         android:textSize="14sp" />
 
                     <com.google.android.material.textview.MaterialTextView
@@ -57,7 +57,7 @@
                         android:includeFontPadding="false"
                         android:paddingHorizontal="16dp"
                         android:text="@string/dialog_subtitle_insert_link"
-                        android:textColor="@color/textColorLight"
+                        android:textColor="@color/text_color_light"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -83,10 +83,10 @@
                     app:boxCornerRadiusBottomStart="32dp"
                     app:boxCornerRadiusTopEnd="32dp"
                     app:boxCornerRadiusTopStart="32dp"
-                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeColor="@color/color_primary"
                     app:hintEnabled="true"
                     app:startIconDrawable="@drawable/ic_button_insert_link"
-                    app:startIconTint="@color/colorPrimary">
+                    app:startIconTint="@color/color_primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputLinkTitle"
@@ -96,7 +96,7 @@
                         android:fontFamily="@font/montserrat"
                         android:inputType="textPersonName"
                         android:maxLines="1"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textCursorDrawable="@null" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -114,7 +114,7 @@
                     app:boxCornerRadiusBottomStart="32dp"
                     app:boxCornerRadiusTopEnd="32dp"
                     app:boxCornerRadiusTopStart="32dp"
-                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeColor="@color/color_primary"
                     app:hintEnabled="false">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -127,7 +127,7 @@
                         android:inputType="text|textMultiLine"
                         android:maxLength="500"
                         android:minLines="5"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textCursorDrawable="@null" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -155,7 +155,7 @@
                         app:boxCornerRadiusTopEnd="32dp"
                         app:boxCornerRadiusTopStart="32dp"
                         app:cornerRadius="32dp"
-                        app:strokeColor="@color/colorPrimary" />
+                        app:strokeColor="@color/color_primary" />
 
                     <Space
                         android:layout_width="8dp"

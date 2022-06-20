@@ -7,8 +7,8 @@
         <shape android:shape="rectangle">
             <gradient
                 android:angle="45"
-                android:endColor="@color/colorAccent"
-                android:startColor="@color/colorAccent" />
+                android:endColor="@color/color_on_primary"
+                android:startColor="@color/color_on_primary" />
         </shape>
     </item>
     <item
@@ -19,8 +19,8 @@
         <shape android:shape="rectangle">
             <gradient
                 android:angle="45"
-                android:endColor="@color/colorPrimary"
-                android:startColor="@color/colorPrimary" />
+                android:endColor="@color/color_primary"
+                android:startColor="@color/color_primary" />
         </shape>
     </item>
 </layer-list>

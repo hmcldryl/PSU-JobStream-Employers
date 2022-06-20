@@ -17,7 +17,7 @@
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:src="@drawable/placeholder_photo"
-            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_color="@color/color_primary"
             app:civ_border_width="3dp" />
 
         <ImageView
@@ -27,7 +27,7 @@
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@+id/profilePhoto"
             android:src="@drawable/ic_icon_chat_left_bubble"
-            app:tint="@color/tintIcon" />
+            app:tint="@color/tint_icon" />
 
 
         <com.google.android.material.card.MaterialCardView
@@ -37,7 +37,7 @@
             android:layout_marginEnd="25dp"
             android:layout_toEndOf="@+id/chatBubbleArrowLeft"
             android:gravity="start"
-            app:cardBackgroundColor="@color/chatReceiverCloudColor"
+            app:cardBackgroundColor="@color/chat_receiver_cloud_color"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -53,7 +53,7 @@
                     android:fontFamily="@font/montserrat"
                     android:maxLength="255"
                     android:text=""
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/text_color"
                     android:textSize="14sp" />
 
                 <ImageView

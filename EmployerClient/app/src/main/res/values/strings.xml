@@ -1,10 +1,16 @@
 <resources>
     <string name="app_name">PSU JobStream Employer</string>
-    <string name="version_name">v0.3.1a</string>
+    <string name="version_name">v0.3.3b</string>
 
     <string name="input_hint_email">Email</string>
     <string name="input_hint_password">Password</string>
+    <string name="input_hint_confirm_password">Confirm Password</string>
 
+    <string name="input_hint_current_password">Current Password</string>
+    <string name="input_hint_new_password">New Password</string>
+    <string name="input_hint_confirm_new_password">Confirm New Password</string>
+
+    <string name="input_hint_psu_email">PSU Email</string>
     <string name="input_hint_business_name">Business Name</string>
     <string name="input_hint_business_email">Business Email</string>
     <string name="input_hint_business_website">Business Website</string>
@@ -32,6 +38,13 @@
     <string name="button_text_no">No</string>
     <string name="button_text_yes">Yes</string>
     <string name="button_text_view_application">View Applications</string>
+    <string name="button_text_settings_send_verification">Send Verification Email</string>
+    <string name="button_text_settings_change_email">Change Email</string>
+    <string name="button_text_settings_change_password">Change Password</string>
+    <string name="button_text_settings_check_update">Check for Updates</string>
+
+    <string name="label_text_settings_account">Account</string>
+    <string name="label_text_settings_system">System</string>
     <string name="label_text_dashboard_posts">Posts</string>
     <string name="label_subtext_dashboard_posts">Job Posting Data</string>
     <string name="label_text_title_welcome">Welcome to</string>
@@ -83,6 +96,10 @@
     <string name="dialog_subtitle_application_document">Documents for Job Application</string>
     <string name="dialog_title_view_application">View Applications</string>
     <string name="dialog_subtitle_view_application">View Applications for this Post</string>
+    <string name="dialog_title_change_email">Change Email</string>
+    <string name="dialog_subtitle_change_email">Change Account Email</string>
+    <string name="dialog_title_change_password">Change Password</string>
+    <string name="dialog_subtitle_change_password">Enter New Password</string>
     <string name="dialog_title_send_message">Send Message</string>
     <string name="dialog_subtitle_send_message">Send a Private Message</string>
 
@@ -118,11 +135,12 @@
     <string name="button_text_header6">Header 6</string>
 
     <string-array name="type">
-        <item>Regular</item>
+        <item>Casual</item>
         <item>Fixed-Term</item>
+        <item>Job Order</item>
+        <item>Regular</item>
         <item>Project</item>
         <item>Seasonal</item>
-        <item>Casual</item>
     </string-array>
 
     <string name="about_info_location">Palawan State University Main Campus, Bgy. Tiniguiban, Puerto Princesa City, Palawan, Philippines 5300</string>

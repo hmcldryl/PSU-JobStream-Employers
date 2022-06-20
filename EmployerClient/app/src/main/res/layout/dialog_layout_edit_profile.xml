@@ -27,14 +27,14 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="50dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/color_primary"
                     android:padding="8dp"
                     android:src="@drawable/ic_button_edit_profile" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="@color/colorAccent"
+                    android:background="@color/color_on_primary"
                     android:gravity="center_vertical"
                     android:orientation="vertical">
 
@@ -46,7 +46,7 @@
                         android:includeFontPadding="false"
                         android:paddingHorizontal="16dp"
                         android:text="@string/dialog_title_edit_profile"
-                        android:textColor="@color/textColorLight"
+                        android:textColor="@color/text_color_light"
                         android:textSize="14sp" />
 
                     <com.google.android.material.textview.MaterialTextView
@@ -57,7 +57,7 @@
                         android:includeFontPadding="false"
                         android:paddingHorizontal="16dp"
                         android:text="@string/dialog_subtitle_edit_profile"
-                        android:textColor="@color/textColorLight"
+                        android:textColor="@color/text_color_light"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -83,10 +83,10 @@
                     app:boxCornerRadiusBottomStart="32dp"
                     app:boxCornerRadiusTopEnd="32dp"
                     app:boxCornerRadiusTopStart="32dp"
-                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeColor="@color/color_primary"
                     app:hintEnabled="true"
                     app:startIconDrawable="@drawable/ic_input_name"
-                    app:startIconTint="@color/colorPrimary">
+                    app:startIconTint="@color/color_primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputBusinessName"
@@ -96,7 +96,7 @@
                         android:fontFamily="@font/montserrat"
                         android:inputType="text|textCapWords"
                         android:maxLines="1"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textCursorDrawable="@null" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -115,10 +115,10 @@
                     app:boxCornerRadiusBottomStart="32dp"
                     app:boxCornerRadiusTopEnd="32dp"
                     app:boxCornerRadiusTopStart="32dp"
-                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeColor="@color/color_primary"
                     app:hintEnabled="true"
                     app:startIconDrawable="@drawable/ic_input_email"
-                    app:startIconTint="@color/colorPrimary">
+                    app:startIconTint="@color/color_primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputBusinessEmail"
@@ -128,7 +128,7 @@
                         android:fontFamily="@font/montserrat"
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textCursorDrawable="@null" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -147,10 +147,10 @@
                     app:boxCornerRadiusBottomStart="32dp"
                     app:boxCornerRadiusTopEnd="32dp"
                     app:boxCornerRadiusTopStart="32dp"
-                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeColor="@color/color_primary"
                     app:hintEnabled="true"
                     app:startIconDrawable="@drawable/ic_icon_website"
-                    app:startIconTint="@color/colorPrimary">
+                    app:startIconTint="@color/color_primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputBusinessWebsite"
@@ -160,7 +160,7 @@
                         android:fontFamily="@font/montserrat"
                         android:inputType="text"
                         android:maxLines="1"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textCursorDrawable="@null" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -178,7 +178,7 @@
                     app:boxCornerRadiusBottomStart="32dp"
                     app:boxCornerRadiusTopEnd="32dp"
                     app:boxCornerRadiusTopStart="32dp"
-                    app:boxStrokeColor="@color/colorPrimary"
+                    app:boxStrokeColor="@color/color_primary"
                     app:hintEnabled="false">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -191,7 +191,7 @@
                         android:inputType="textMultiLine|textCapSentences"
                         android:maxLength="500"
                         android:minLines="5"
-                        android:textColor="@color/textColor"
+                        android:textColor="@color/text_color"
                         android:textCursorDrawable="@null" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -215,7 +215,7 @@
                         android:fontFamily="@font/montserrat"
                         android:text="@string/button_text_cancel"
                         app:cornerRadius="32dp"
-                        app:strokeColor="@color/colorPrimary" />
+                        app:strokeColor="@color/color_primary" />
 
                     <Space
                         android:layout_width="8dp"

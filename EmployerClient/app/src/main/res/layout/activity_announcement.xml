@@ -20,13 +20,13 @@
             app:layout_collapseMode="pin"
             app:layout_scrollFlags="scroll|enterAlways"
             app:navigationIcon="@drawable/ic_button_back"
-            app:navigationIconTint="@color/tintIconLight"
+            app:navigationIconTint="@color/tint_icon_light"
             app:subtitle="@string/toolbar_subtitle_text_announcement"
             app:subtitleTextAppearance="@style/ToolbarSubtitleTextAppearance"
-            app:subtitleTextColor="@color/textColorLight"
+            app:subtitleTextColor="@color/text_color_light"
             app:title="@string/toolbar_title_text_announcement"
             app:titleTextAppearance="@style/ToolbarTitleTextAppearance"
-            app:titleTextColor="@color/textColorLight" />
+            app:titleTextColor="@color/text_color_light" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -44,7 +44,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:src="@drawable/ic_icon_add"
-        app:backgroundTint="@color/colorPrimary"
-        app:tint="@color/tintIconLight" />
+        app:backgroundTint="@color/color_primary"
+        app:tint="@color/tint_icon_light" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
