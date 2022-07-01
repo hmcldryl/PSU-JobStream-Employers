@@ -161,7 +161,7 @@ public class SettingsActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-
+                            Toast.makeText(SettingsActivity.this, "Password updated.", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(SettingsActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
                         }
@@ -215,7 +215,9 @@ public class SettingsActivity extends AppCompatActivity {
     private void updateApp() {
         AppUpdater appUpdater = new AppUpdater(this)
                 .setTitleOnUpdateAvailable("Update Available")
-                .setContentOnUpdateAvailable("Download the latest version of PSU JobStream App.")
+                .setContentOnUpdateAvailable("Download the latest version of PSU JobStream for Employers.")
+                .setContentOnUpdateNotAvailable("No Updates Available")
+                .setTitleOnUpdateNotAvailable("You have the latest version of PSU JobStream for Employers.")
                 .setDisplay(Display.DIALOG)
                 .setUpdateFrom(UpdateFrom.GITHUB)
                 .setGitHubUserAndRepo("hmcldryl", "PSU-JobStream-Employers");
